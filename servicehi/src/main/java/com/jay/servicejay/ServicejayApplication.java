@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author Jay 2018/11/21 18:37
+ * @todo 生产者
+ */
 @SpringBootApplication
 @EnableEurekaClient
 @RestController

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author Jay 2018/11/14 17:00
- * @todo test
+ * @todo ribbon服务对外接口
  */
 
 @RestController

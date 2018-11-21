@@ -10,6 +10,10 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * @author Jay 2018/11/21 18:37
+ * @todo ribbon+Rest 服务
+ */
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableHystrix //表示开启断路器

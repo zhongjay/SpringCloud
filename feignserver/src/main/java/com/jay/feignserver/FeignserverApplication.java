@@ -5,6 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
+
+/**
+ * @author Jay 2018/11/21 18:37
+ * @todo eureka feign实现负载均衡服务
+ */
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
