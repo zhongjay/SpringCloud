@@ -1,0 +1,21 @@
+    eureka:
+      client:
+        #避免配置中心向自己发布服务导致程序报错服务启动不了,如果不加项目启动时报错：Cannot execute request on any known server
+        #register-with-eureka: false
+        #fetch-registry: false
+        serviceUrl:
+          defaultZone: http://localhost:8080/eureka/
+    spring:
+      application:
+        name: config-server
+      cloud:
+        config:
+          server:
+            git:
+              uri: https://github.com/forezp/SpringcloudConfig/
+              #uri: https://github.com/zhongjay/springCloud-config.git
+              search-paths: respo #某个目录下面
+              #username: zhongjay
+              #password: ******
+    server:
+      port: 8087

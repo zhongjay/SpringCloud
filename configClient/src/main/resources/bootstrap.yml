@@ -1,0 +1,17 @@
+    eureka:
+      client:
+        #register-with-eureka: false
+        #fetch-registry: false
+        serviceUrl:
+          defaultZone: http://localhost:8080/eureka/
+    spring:
+      application:
+        name: config-client # 对应config-server所获取的配置文件的{application}
+      cloud:
+        config:
+          #uri: http://localhost:8086/
+          profile: dev # 指定profile，对应config-server所获取的配置文件中的{profile}
+          label: master # 指定git仓库的分支，对应config-server所获取的配置文件的{label}
+          discovery:
+            enabled: true  #是从配置中心读取文件
+            serviceId: config-server  #配置中心的servieId，即服务名,在读取配置文件不再写ip地址，而是服务名
