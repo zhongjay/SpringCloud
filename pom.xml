@@ -7,6 +7,15 @@
     <groupId>com.jay</groupId>
     <artifactId>springCloud</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>configClient</module>
+        <module>configServer</module>
+        <module>eurekaserver</module>
+        <module>feignserver</module>
+        <module>servicehi</module>
+        <module>serviceRibbon</module>
+        <module>serviceZuul</module>
+    </modules>
     <repositories>
         <repository>
             <id>aliyun-repos</id>
